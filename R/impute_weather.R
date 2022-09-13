@@ -34,9 +34,9 @@ impute_temperature <- function(start_h = 0,
    hour_rad <- 0.2417994
 
    # find start in radians for cos function
-   start_rad <- (start_h * hour_rad) + (0.2417994 * 11)
+   start_rad <- (start_h * hour_rad) - 0.2417994
    # find start in radians for cos function
-   end_rad <- (end_h * hour_rad) + (0.2417994 * 11)
+   end_rad <- (end_h * hour_rad) - 0.2417994
 
    tm_range <-
       ((cos(seq(from = start_rad,
