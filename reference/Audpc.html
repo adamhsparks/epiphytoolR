@@ -64,7 +64,7 @@
 
 <dt>na.rm</dt>
 <dd><p>weather to remove NA values or return NA when there are only NA
-vales</p></dd>
+values</p></dd>
 
 </dl></div>
     <div class="section level2">
@@ -77,25 +77,25 @@ vales</p></dd>
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
     <p>This is a wrapper for <a href="https://CRAN.R-project.org/package=agricolae" class="external-link"><span class="pkg">agricolae</span></a> which checks for NA values and will
 return NA values if specified in the argument
-see helpagricolae::audpc for more details.</p>
+see <code>agricolae::audpc()</code> for more details.</p>
     </div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># see examples in help(agricolae::audpc)</span></span></span>
-<span class="r-in"><span><span class="va">dates</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">14</span>,<span class="fl">21</span>,<span class="fl">28</span><span class="op">)</span> <span class="co"># days</span></span></span>
+<span class="r-in"><span><span class="va">dates</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">14</span>, <span class="fl">21</span>, <span class="fl">28</span><span class="op">)</span> <span class="co"># days</span></span></span>
 <span class="r-in"><span><span class="co"># example 1: evaluation - vector</span></span></span>
-<span class="r-in"><span><span class="va">evaluation</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">40</span>,<span class="fl">80</span>,<span class="fl">90</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="fu">Audpc</span><span class="op">(</span><span class="va">evaluation</span>,<span class="va">dates</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">evaluation</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">40</span>, <span class="fl">80</span>, <span class="fl">90</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">Audpc</span><span class="op">(</span><span class="va">evaluation</span>, <span class="va">dates</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> evaluation </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>       1015 </span>
-<span class="r-in"><span><span class="va">dates</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">14</span>,<span class="fl">21</span>,<span class="cn">NA</span><span class="op">)</span> <span class="co"># days</span></span></span>
-<span class="r-in"><span><span class="fu">Audpc</span><span class="op">(</span><span class="va">evaluation</span>,<span class="va">dates</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">dates</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">14</span>, <span class="fl">21</span>, <span class="cn">NA</span><span class="op">)</span> <span class="co"># days</span></span></span>
+<span class="r-in"><span><span class="fu">Audpc</span><span class="op">(</span><span class="va">evaluation</span>, <span class="va">dates</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] NA</span>
 <span class="r-in"><span><span class="co"># agricolae::audpc(evaluation,dates)</span></span></span>
-<span class="r-in"><span><span class="va">dates</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">14</span>,<span class="fl">21</span>,<span class="fl">28</span><span class="op">)</span> <span class="co"># days</span></span></span>
-<span class="r-in"><span><span class="va">evaluation</span><span class="op">&lt;-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">40</span>,<span class="fl">80</span>,<span class="cn">NA</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="fu">Audpc</span><span class="op">(</span><span class="va">evaluation</span>,<span class="va">dates</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">dates</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">14</span>, <span class="fl">21</span>, <span class="fl">28</span><span class="op">)</span> <span class="co"># days</span></span></span>
+<span class="r-in"><span><span class="va">evaluation</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">40</span>, <span class="fl">80</span>, <span class="cn">NA</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">Audpc</span><span class="op">(</span><span class="va">evaluation</span>, <span class="va">dates</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] NA</span>
 <span class="r-in"><span><span class="co"># agricolae::audpc(evaluation,dates)</span></span></span>
 </code></pre></div>
